@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+  <html lang="sr">
+
+  <head>
+    <title>Janić rakija | Kontakt</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stil.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+  </head>
+  <body>
+
+    <header>
+
+
+
+        <a href="index.html" class="logo"><img src="logo/novilogobeo.png" alt="logo"></a>
+        <nav>
+        <ul>
+          <li><a href='index.html'>POČETNA</a></li>
+          <li><a href='index.html#onama'>O NAMA</a></li>
+          <li><a href='galerija.html'>GALERIJA</a></li>
+          <li><a href='kontakt.html'>KONTAKT</a></li>
+          </ul>
+        </nav>
+
+      <div class="soc-net">
+                <a href="https://www.facebook.com/groups/325845661111823/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/?lang=sr" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+
+
+    </header>
+    <div id="hammenu">
+
+      <div class="soc-net">
+    <a href="https://www.facebook.com/groups/325845661111823/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com/?lang=sr" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+  </div>
+
+
+
+      <a href="index.html"><img id="logo" src="logo/novilogogreen.png" alt="logo" title="logo"></a>
+      <img id="icon" src="slike/hamburger.png" alt="hammenu" title="hammenuicon">
+      <img src="slike/x.png" alt="closeicon" id="close">
+      <div id="nav">
+      <ul>
+          <li><a href="index.html">POČETNA</a></li>
+          <li><a href="index.html#onama">O NAMA</a></li>
+          <li><a href="galerija.html">GALERIJA</a></li>
+          <li><a href="kontakt.html">KONTAKT</a></li>
+      </ul>
+      <script>
+      var otvori=document.getElementById('icon');
+var zatvori=document.getElementById('close');
+var navigacija=document.getElementById('nav');
+
+otvori.addEventListener('click',show, false);
+zatvori.addEventListener('click',remove, false);
+
+function show(evObj){
+  var klik=evObj.target;
+    if(klik.tagName.toUpperCase()==='IMG'){
+      navigacija.style.display="block";
+      zatvori.style.display="block";
+      otvori.style.display="none";
+    }
+}
+
+function remove(e){
+  var cilj=e.target;
+    if(cilj.tagName.toUpperCase()==='IMG'){
+      navigacija.style.display="none";
+      zatvori.style.display="none";
+      otvori.style.display="block";
+    }
+}</script>
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <div class="contact-section">
+
+      <h1><span> Pošaljite nam poruku </span></h1>
+
+
+
+
+
+      <form action="index.html" method="post">
+
+        <input type="text" name="ime i prezime" class="contact-form-text" placeholder="Vaše ime i prezime" required>
+
+        <input type="email" name="email" class="contact-form-text" placeholder="Vaš e-mail" required>
+
+        <input type="tel" name="telefon" class="contact-form-text" placeholder="Vaš telefon" required>
+
+        <textarea class="contact-form-text" name="poruka" placeholder="Vaša poruka" required></textarea>
+
+        <input type="submit" name="dugme" class="contact-form-btn" value="Pošalji poruku">
+
+
+
+
+
+          </form>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+
+   <p>Radno vreme: 08-16h</p>
+
+      <p> 11211 Borča, Beograd </p>
+      <br>
+
+      <p>  Copyright	&copy; Janić rakija 2016. All rights reserved.™ </p>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
